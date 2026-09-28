@@ -1,3 +1,8 @@
-# About Me
+# About Abi
+Hello!
+- I am studying Computer Science at the University of Leeds
+        
+        this is in a box
+## i dont  like writing about myself.
 
-Using the resources linked in examples, have a go at making a quick about you page using Markdown.
+text can be *italic* or **bold**
