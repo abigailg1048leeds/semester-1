@@ -1,7 +1,7 @@
 """
 Portfolio Task - Week 1.3
 By submitting this code you are declaring that all work in this file, other than any provided template code, was written and developed by you independently.
-Name: 
+Name:   
 """
 
 states = { "red":4, "red_amber":3, "green":5, "amber":3 }
@@ -13,12 +13,12 @@ state = "red"
 
 #print(f"Time {systime:03} State {state}")
 count = 0
-for i in range(maxtime):
+for i in range(maxtime+1):
     try:
-        print(f"Time 00{i+1} State {colours[count]}")
+        print(f"Time {i:03} State {colours[count]}")
     except:
         count = 0
-        print(f"Time 00{i+1} State {colours[count]}")
+        print(f"Time {i:03} State {colours[count]}")
     count +=1 
 # Simulate the traffic light system up to time=maxtime in 1-second steps
 

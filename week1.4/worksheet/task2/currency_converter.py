@@ -1,4 +1,5 @@
 
+
 """
     Portfolio Task - Week 4
 
@@ -18,10 +19,8 @@ def currency_converter(amount, from_currency, to_currency):
         'INR': {'PHP': 0.69, 'CNY': 0.09, 'GBP': 0.01}
     }
 
-    # your code here
-
-    return None
-
-# Submit only this file currency_converter.py with the completed function.
-
-# Remove any additional code you may have added during development and testing.
+    conversion = conversion_rate[from_currency][to_currency]
+    total = amount*conversion
+    if total < 0:
+        total = 0
+    return total
