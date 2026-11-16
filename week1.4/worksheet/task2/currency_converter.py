@@ -23,4 +23,4 @@ def currency_converter(amount, from_currency, to_currency):
     total = amount*conversion
     if total < 0:
         total = 0
-    return total
+    return total 
