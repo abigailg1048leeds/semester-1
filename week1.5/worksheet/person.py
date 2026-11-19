@@ -1,19 +1,17 @@
 # Worksheet 1.5: Person class
 
-from datetime import date
+import datetime
 class Person:
-    """im going to kill myself"""
+    """this defines a person name and birthday"""
     def __init__(self,name,birth):
-        """im going to kill myself"""
-        try:
-            name = str(name)
-            birth = birth.date()
-            self.name = name
-            self.birth = birth
-        except:
+        """initialises the person object"""
+        name = str(name)
+        if isinstance(birth, datetime.date):
             raise TypeError
+        self.name = name
+        self.birth = birth
     def is_birthday(self):
-        """im going to kill myself"""
+        """check if it is persons birthday yay :D"""
         today = str(date.today()[4:])
         birthday = str(self.birth[4:])
         if today == birthday:
@@ -21,7 +19,7 @@ class Person:
         else:
             return False
     def initials(self):
-        """im going to kill myself"""
+        """persons initials"""
         initials = ""
         for i in range (len(self.name.title())):
             if self.name[i].isupper():
